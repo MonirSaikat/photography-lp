@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch":"tailwindcss -i ./src/input.css -o ./public/style.css --watch",
-    "serve":"lite-server --baseDir=public"
+    "serve":"lite-server --baseDir=public --port=5678"
   },
   "keywords": [],
   "author": "",

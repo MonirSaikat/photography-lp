@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="selection:text-primary">
+<body class="selection:text-primary font-roboto">
     <!-- top bar -->
     <section class="py-7 text-center tracking-wide">
         <p class="uppercase  text-gray-500">
@@ -21,17 +25,25 @@
     <!-- end of topbar -->
 
     <!-- navbar -->
-    <nav class="flex justify-center">
-        <ul class="flex justify-center uppercase text-gray-500">
-            <li class="mx-3"><a class=" active text-primary font-semibold" href="#">portfolio</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">info</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">pricing</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">about</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">contact</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">blog</a></li>
-            <li class="mx-3"><a class="hover:text-primary" href="#">
-                <i class="fa fa-search"></i>
-            </a></li>
+    <nav class="flex w-full justify-between items-center px-4 bg-gray-100 py-2">
+        <button id="toggler" class="text-2xl text-gray-500 md:hidden cursor-pointer">
+            <i class="fa fa-bars cursor-pointer"></i>
+        </button>
+        <ul id="menu" class="absolute z-10 md:static hidden left-0 bg-gray-100 w-full top-32 md:flex justify-center uppercase text-gray-500">
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class=" hover:text-primary" href="#">portfolio</a></li>
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class="hover:text-primary" href="#">info</a></li>
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class="hover:text-primary" href="#">pricing</a></li>
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class="hover:text-primary" href="#">about</a></li>
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class="hover:text-primary" href="#">contact</a></li>
+            <li class="mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit"><a class="hover:text-primary" href="#">blog</a></li>
+            <li class="relative mx-3 my-3 py-2 cursor-pointer hover:text-white duration-75 pl-2 hover:bg-gray-600 md:hover:bg-inherit">
+                <a class="hover:text-primary" href="#" id="search-button">
+                    <i class="fa fa-search"></i>
+                </a>
+                <div class="absolute p-2 bg-gray-200 rounded-lg left-0 -bottom-10  hidden" id="search-box">
+                    <input  type="text" class="px-2 py-1 text-gray-800" placeholder="Search">
+                </div>
+            </li>
         </ul>
     </nav>
     <!-- end of navbar -->
@@ -40,22 +52,82 @@
     <section class="py-5">
         <div class="text-center my-5"> 
             <p class="uppercase mb-4 font-medium text-gray-500">the wedding Photography</p>
-            <h2 class="text-4xl">Authentic moments and natural portraits</h2>
+            <h2 class="text-4xl font-heading">Authentic moments and natural portraits</h2>
             <span class="inline-block bg-primary my-5 h-1 w-10"></span>
 
-            <div class="grid grid-cols-4 gap-2">
-                <a class="g-img" href="./img/img-1.webp"><img class="cursor-pointer" src="./img/img-1.webp" alt=""></a>
-                <a class="g-img" href="./img/img-2.jpg"><img class="cursor-pointer" src="./img/img-2.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-3.jpg"><img class="cursor-pointer" src="./img/img-3.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-4.jpg"><img class="cursor-pointer" src="./img/img-4.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-5.jpg"><img class="cursor-pointer" src="./img/img-5.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-6.jpg"><img class="cursor-pointer" src="./img/img-6.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-7.jpg"><img class="cursor-pointer" src="./img/img-7.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-8.jpg"><img class="cursor-pointer" src="./img/img-8.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-9.jpg"><img class="cursor-pointer" src="./img/img-9.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-10.jpg"><img class="cursor-pointer" src="./img/img-10.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-11.jpg"><img class="cursor-pointer" src="./img/img-11.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-12.jpg"><img class="cursor-pointer" src="./img/img-12.jpg" alt=""></a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                <a class="g-img relative group" href="./img/img-1.webp">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-1.webp" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-2.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-2.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-3.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-3.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-4.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-4.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-5.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-5.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-6.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-6.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-7.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-7.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-8.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-8.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-9.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-9.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-10.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-10.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-11.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-11.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-12.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-12.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -64,11 +136,11 @@
     <!-- how and why -->
     <section class="py-7">
         <div class="text-center">
-            <h2 class="text-4xl">The how and why.</h2>
+            <h2 class="text-4xl font-heading">The how and why.</h2>
             <span class="inline-block bg-primary my-5 h-1 w-10"></span>
         </div>
 
-        <div class="max-w-3xl mx-auto grid grid-cols-2 gap-5 text-gray-600">
+        <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 text-gray-600 px-3">
             <div>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus voluptatem facere modi, repudiandae iste aut recusandae molestias, cumque illo id, ut expedita eos alias quos dolorem aliquam libero in?</p=>
                 <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati ipsa aperiam tenetur, asperiores doloribus rerum quam aut quis odit, possimus reiciendis ipsam nostrum optio dicta blanditiis natus, exercitationem perspiciatis. Dicta et cum reiciendis aut?</p>
@@ -88,19 +160,79 @@
     <!-- gallery two -->
     <section class="py-5 pb-2">
         <div class="text-center my-5 mb-0"> 
-            <div class="grid grid-cols-4 gap-2">
-                <a class="g-img" href="./img/img-13.jpg"><img class="cursor-pointer" src="./img/img-13.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-14.jpg"><img class="cursor-pointer" src="./img/img-14.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-15.jpg"><img class="cursor-pointer" src="./img/img-15.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-16.jpg"><img class="cursor-pointer" src="./img/img-16.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-17.jpg"><img class="cursor-pointer" src="./img/img-17.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-18.jpg"><img class="cursor-pointer" src="./img/img-18.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-19.jpg"><img class="cursor-pointer" src="./img/img-19.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-20.jpg"><img class="cursor-pointer" src="./img/img-20.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-21.jpg"><img class="cursor-pointer" src="./img/img-21.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-22.jpg"><img class="cursor-pointer" src="./img/img-22.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-23.jpg"><img class="cursor-pointer" src="./img/img-23.jpg" alt=""></a>
-                <a class="g-img" href="./img/img-24.jpg"><img class="cursor-pointer" src="./img/img-24.jpg" alt=""></a>
+            <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-2">
+                <a class="g-img relative group" href="./img/img-13.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-13.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-14.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-14.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-15.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-15.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-16.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-16.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-17.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-17.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-18.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-18.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-19.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-19.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-20.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-20.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-21.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-21.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-22.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-22.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-23.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-23.jpg" alt="">
+                </a>
+                <a class="g-img relative group" href="./img/img-24.jpg">
+                    <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                        <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                    </span>
+                    <img class="cursor-pointer" src="./img/img-24.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -108,20 +240,20 @@
 
     <!-- timeline  -->
     <section class="py-16 bg-primary selection:text-white">
-        <div class="flex flex-wrap font-semibold justify-evenly text-white text-center">
-            <div>
+        <div class="md:flex md:flex-wrap font-semibold justify-evenly text-white text-center">
+            <div class="my-7 md:my-0">
                 <h2 class="text-3xl">350</h2>
                 <p class="uppercase ">lergest wedding</p>
             </div>
-            <div>
+            <div class="my-7 md:my-0">
                 <h2 class="text-3xl">2</h2>
                 <p class="uppercase ">smallest wedding</p>
             </div>
-            <div>
+            <div class="my-7 md:my-0">
                 <h2 class="text-3xl">450+</h2>
                 <p class="uppercase ">euquiries per year</p>
             </div>
-            <div>
+            <div class="my-7 md:my-0">
                 <h2 class="text-3xl">20</h2>
                 <p class="uppercase ">desination wedding</p>
             </div>
@@ -131,27 +263,87 @@
 
     <!-- gallery three -->
     <section>
-        <div class="grid grid-cols-4 gap-2">
-            <a class="g-img" href="./img/img-25.jpg"><img class="cursor-pointer" src="./img/img-25.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-26.jpg"><img class="cursor-pointer" src="./img/img-26.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-27.jpg"><img class="cursor-pointer" src="./img/img-27.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-28.jpg"><img class="cursor-pointer" src="./img/img-28.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-29.jpg"><img class="cursor-pointer" src="./img/img-29.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-30.jpg"><img class="cursor-pointer" src="./img/img-30.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-31.jpg"><img class="cursor-pointer" src="./img/img-31.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-32.jpg"><img class="cursor-pointer" src="./img/img-32.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-33.jpg"><img class="cursor-pointer" src="./img/img-33.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-34.jpg"><img class="cursor-pointer" src="./img/img-34.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-35.jpg"><img class="cursor-pointer" src="./img/img-35.jpg" alt=""></a>
-            <a class="g-img" href="./img/img-36.jpg"><img class="cursor-pointer" src="./img/img-36.jpg" alt=""></a>
+        <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a class="g-img relative group" href="./img/img-25.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-25.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-26.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-26.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-27.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-27.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-28.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-28.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-29.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-29.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-30.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-30.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-31.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-31.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-32.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-32.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-33.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-33.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-34.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-34.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-35.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-35.jpg" alt="">
+            </a>
+            <a class="g-img relative group" href="./img/img-36.jpg">
+                <span class="absolute top-0  left-0 w-full h-full duration-150 hover:bg-overlay flex justify-center items-center">
+                    <ion-icon class="hidden group-hover:block fa fa-plus text-white text-5xl font-extralight" name="add-outline"></ion-icon>
+                </span>
+                <img class="cursor-pointer" src="./img/img-36.jpg" alt="">
+            </a>
         </div>
     </section>
     <!-- end of gallery three -->
 
     <!-- commitment  -->
     <section class="py-16 bg-gray-700 text-center text-white">
-        <div class="container max-w-4xl mx-auto">
-            <h1 class="text-4xl mb-5">"We will treasure them forever!"</h1>
+        <div class="container max-w-4xl mx-auto my-4">
+            <h1 class="text-4xl font-medium mb-5">"We will treasure them forever!"</h1>
             <p class="text-gray-300">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis iste labore deleniti repudiandae maxime vero. Repellat numquam quae pariatur voluptas quibusdam laboriosam ipsam nesciunt optio? Facere rem cupiditate nesciunt in, saepe earum enim. Aspernatur!"
             </p>
@@ -161,22 +353,70 @@
     <!-- end of commitment -->
 
     <!-- pricing -->
-    <section class="py-12">
-
+    <section class="py-16 text-white bg-gray-700 flex justify-center items-center uppercase text-center bg-pricing-bg bg-center bg-cover bg-blend-multiply">
+        <div class="py-16 my-10">
+            <h2 class="text-5xl font-bold">did you know...</h2>
+            <p class="uppercase my-5">you can see my pricing here</p>
+            <a class="bg-black py-3 px-7 text-sm font-semibold" href="#">
+                show more
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
     </section>
     <!-- end of pricing -->
 
     <!-- quick links -->
+    <section class="bg-slate-600 text-center py-6 text-white">
+        <h2 class="inline-block uppercase text-xl border-b-4 pb-3">quick links</h2>
+        <div class="container uppercase text-sm mt-8 md:grid md:grid-cols-3 mx-auto">
+            <ul class="mb-5">
+                <li class="my-2"><a class="hover:underline" href="#">home</a></li>
+                <li class="my-2"><a class="hover:underline" href="#">about</a></li>
+                <li class="my-2"><a class="hover:underline" href="#">wedding portfolio</a></li>
+                <li class="my-2"><a class="hover:underline" href="#">engagement shoots</a></li>
+                <li class="my-2"><a class="hover:underline" href="#">albums & books</a></li>
+            </ul>
+            <ul class="mb-5">
+                <li class="my-2"><a href="#" class="hover:underline">pricing</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">info & facts</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">destination wedding</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">pre wedding shoots</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">blog</a></li>
+            </ul>
+            <ul>
+                <li class="my-2"><a href="#" class="hover:underline">contact</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">useful links</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">featured wedding</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">privacy policy</a></li>
+                <li class="my-2"><a href="#" class="hover:underline">testimonials</a></li>
+            </ul>
+        </div>
+    </section>
     <!-- end of quick links -->
 
     <!-- welcome  -->
+    <section class="py-8 bg-white text-center">
+        <p class="uppercase px-4 font-semibold leading-8">
+            everyone is welcome regardless of race, gender, religion or sexuality.
+        </p>
+    </section>
     <!-- end of welcome -->
 
     <!-- footer -->
+    <footer class="bg-gray-100 py-8 text-center px-3">
+        <div>
+            <a href="#" class="mx-3 text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mx-3 text-2xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="mx-3 text-2xl"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="font-medium text-gray-700 mt-5">2022 &copy; myCompany Limited.</p>
+        <p class="text-gray-500 text-lg mt-5">Bristol and UK Wedding photographer | Digital Wedding Photographer</p>
+    </footer>
     <!-- end of footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./vendor/magnific-popup/magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script>
         $(document).ready(function() {
             $('.g-img')
@@ -188,6 +428,20 @@
                        enabled:true
                     }, 
                 });
+
+
+            // mobile nav
+            $('#toggler')
+                .on('click', function(){
+                    $('#menu').slideToggle();
+                });
+
+            // search
+            $('#search-button')
+                .on('click', function(e){
+                    console.log(e.target);
+                    $('#search-box').fadeToggle();
+                })
         });
     </script>
 </body>
